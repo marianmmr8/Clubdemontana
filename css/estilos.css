@@ -1,0 +1,217 @@
+/* El asterisco es para decir esto es así  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* el root son variables, aquí se meten todas las cosas que se repitan y sea mas facil de cambiar , como puede ser el color principal.. */
+:root {
+  --color-principal: black;
+  --color-secundario:rgb(241, 194, 135);
+  --color-terciario:rgb(229, 229, 220);
+  --color-tarjeta:aliceblue;
+  --color-transicion:rgb(32, 181, 134);
+  --color-letrascabecera:rgb(29 239 172);
+  --font-secundaria: "Original Surfer", sans-serif;
+}
+/* este html scroll es para que en la pagina se baje escroleando no directamente */
+html {
+  scroll-behavior: smooth;
+  
+}
+
+header {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* estas 3 siguientes son para fijar la cabecera */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: aliceblue;
+  width: 100%;
+}
+.titulos{
+  font-size: 200%;
+  font-weight: bolder;
+  color: rgb(18, 31, 31);
+  background-color: antiquewhite;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  font-family: var(--font-secundaria);
+}
+/* el nav es la cabecera que ponemos puede ser informacion,trabajos lo que ponemos para enlazar de arriba a abajo */
+nav a{
+  text-decoration: none;
+  margin:auto;
+  font-weight: bolder;
+  color: rgb(18, 31, 31);
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* esta es la regla para que la transicion se convierta a la siguiente, esta regla es en lo que se convierte */
+nav a:hover {
+  color: rgb(32, 181, 134);
+  transform: scale(1.2);
+}
+/* aqui le damos forma a la cabecera , metemos imagen( no va en html) dentro letras ... */
+#Presentacion-cabecera {
+  margin-top: 50px;
+  color: var(--color-letrascabecera);
+  width: 100%;
+  height: 80vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/imagencabecera.jpg");
+    /* esto es para que no se repita la foto */
+    background-repeat: no-repeat;
+    /* esto es para que se adapte */
+    background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+h1{
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+  font-family: var(--font-secundaria);
+}
+h3{
+  font-family: var(--font-secundaria);
+  text-align: center;
+}
+@media (max-width: 1024px){
+h1{
+  font-size: 3rem;
+}
+}
+/* esto es una regla para el movil */
+@media (max-width: 768px){
+h1{
+font-size: 2rem;
+}
+
+}
+
+
+.texto-tarjeta {
+  padding: 10%;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-secundaria);
+  align-items: center;
+}
+
+.texto-tarjeta p {
+  margin-bottom: 1rem;
+}
+
+.texto-tarjeta button {
+  
+  
+  color: var(--color-principal);
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: antiquewhite;
+  border-radius: 15px;
+  padding: 10px 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.Recomendaciones-actividades{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+table {
+  margin: 1rem auto;
+  border:rgb(18, 31, 31) solid 2px;
+}
+table td {
+  padding: 0.3rem;
+}
+table th {
+  text-align: center;
+}
+.texto-tarjeta button:hover{
+  color:var(--color-transicion);
+  transform:translateY(-2px);
+}
+
+.columnas {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+p { text-align: center;
+  padding: 1rem;
+
+}
+.parrafo-suelto {
+  font-weight: bolder;
+}
+
+.columnas > * {
+  flex: 1;
+}
+
+.columnas img {
+  width: 50%;
+  border-radius: 8%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  
+}
+
+.footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: antiquewhite;
+  border-radius:8px;
+  margin-top:20px ;
+
+}
+
+         
+#Apuntate{
+  background-color: var(--color-tarjeta);
+  
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.footer-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.footer-redes {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
