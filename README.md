@@ -2,8 +2,12 @@
 
 He elegido Html por que es el que sabemos ahira mismo.
 
+La pagina trata sobre rutas de Granada
 
-*Procedencia de las fotos*
+
+**Procedencia de las fotos**
+
+He elegido para la cabecera el quienes somos y los cursos imagenes generadas po IA que son estas: 
 
 # Generadas por Gemini
 
@@ -18,6 +22,8 @@ He elegido Html por que es el que sabemos ahira mismo.
 # Importadas de la webs
 
 Las imagenes que hacen referencia a rutas son escogidas de la web.
+
+Para darle mas realismo a las rutas estas si las he cogido de la web, aqui debajo dejo cada link para que se pueda acceder a la pagina para ver mas información.
 
 ![senderodelapavilla.jpeg](./img/senderodelapavilla.jpeg)
 
@@ -37,6 +43,11 @@ Las imagenes que hacen referencia a rutas son escogidas de la web.
 
 ![cahorros.wepb](./img/cahorros.webp)
 [Cahorros](https://sendasdeviaje.com/ruta-los-cahorros-monachil-granada/)
+
+
+## Proyecto
+
+Como indican las R.A he utilizado uno de cada elementos que pide , he incluso he repetido en algunos.
 
 
 
