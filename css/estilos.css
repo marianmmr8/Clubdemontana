@@ -97,12 +97,14 @@ h3{
 }
 p{
 font-family: var(--font-secundaria);
-  padding: 20px;
+  padding: 30px;
   text-align: center;
-  
-    
+
 }
 
+.parrafo-quienes-somos{
+  padding: 30px;
+}
 @media (max-width: 1024px){
 h1{
   font-size: 3rem;
