@@ -32,13 +32,13 @@ header {
   background-color: aliceblue;
   width: 100%;
 }
-.titulos{
+#BP{
   font-size: 200%;
   font-weight: bolder;
   color: rgb(18, 31, 31);
   background-color: antiquewhite;
   border-radius: 50%;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   font-family: var(--font-secundaria);
 }
@@ -50,6 +50,7 @@ nav a{
   color: rgb(18, 31, 31);
   display: inline-block;
   transition: all 0.3s ease;
+  padding: 10px;
 }
 
 /* esta es la regla para que la transicion se convierta a la siguiente, esta regla es en lo que se convierte */
@@ -76,17 +77,32 @@ nav a:hover {
   justify-content: center;
 
 }
+/* .titulos{
+padding: 30px;
+} */
 h1{
   
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h2{
   font-family: var(--font-secundaria);
+  padding: 5px;
 }
 h3{
   font-family: var(--font-secundaria);
   text-align: center;
+  padding: 30px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  
 }
+h4{
+font-family: var(--font-secundaria);
+  padding: 30px;
+  text-align: center;
+  text-decoration:underline ;
+    
+}
+
 @media (max-width: 1024px){
 h1{
   font-size: 3rem;
@@ -143,6 +159,18 @@ table td {
 table th {
   text-align: center;
 }
+.tabla{
+margin-top:15px;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: color var(--color-terciario);
+   
+}
+/* .fondo-tabla{
+  margin-top: 120px;
+} */
+
+
 .texto-tarjeta button:hover{
   color:var(--color-transicion);
   transform:translateY(-2px);
@@ -154,12 +182,10 @@ table th {
   align-items: center;
 }
 p { text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
 
 }
-.parrafo-suelto {
-  font-weight: bolder;
-}
+
 
 .columnas > * {
   flex: 1;
@@ -186,16 +212,41 @@ p { text-align: center;
          
 #Apuntate{
   background-color: var(--color-tarjeta);
-  
-}
+   }
 
+/* .campo-formulario{
+  padding: 5px;
+  display: flex;
+} */ 
+
+ nav a {
+  padding: 20px;
+ }
+ .relleno-formulario{
+  padding: 5px;
+ }
+ .nombre-etiqueta{
+  padding: 5px;
+  display: flex;
+  align-content: center;
+
+ }
 
 .container{
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 15rem;
+  align-items: center;
 }
 
+.boton-enviar{
+  padding: 15px;
+
+}
+
+#box-politicas{
+  padding: 5px;
+}
 .footer-contacto {
   display: flex;
   flex-direction: column;
