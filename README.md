@@ -1,6 +1,6 @@
 ## README
 
-He elegido Html por que es el que sabemos ahira mismo.
+He elegido Html por que es el que sabemos ahora mismo.
 
 La pagina trata sobre rutas de Granada
 
@@ -48,6 +48,12 @@ Para darle mas realismo a las rutas estas si las he cogido de la web, aqui debaj
 ## Proyecto
 
 Como indican las R.A he utilizado uno de cada elementos que pide , he incluso he repetido en algunos.
+
+**Lo he subido a Netlify.**
+
+https://clubdemontana.netlify.app
+
+
 
 
 
