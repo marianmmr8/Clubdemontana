@@ -53,6 +53,8 @@ Como indican las R.A he utilizado uno de cada elementos que pide , he incluso he
 
 https://clubdemontana.netlify.app
 
+La página web está pasada por WAVE para comprbar la accesibilidad de esta.
+
 
 
 
