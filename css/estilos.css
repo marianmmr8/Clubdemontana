@@ -221,7 +221,7 @@ p { text-align: center;
 
          
 #Apuntate{
-  background-color: var(--color-tarjeta);
+  background-color: #f4f1e8;
 }
 
 #Apuntate .Apuntate > h2 {
@@ -240,8 +240,8 @@ p { text-align: center;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
   align-items: end;
-  background: var(--color-tarjeta);
-  border: 1px solid rgb(18, 31, 31);
+  background: #fffdf7;
+  border: 1px solid #d3cdbd;
   border-radius: 10px;
   padding: 1rem;
 }
@@ -307,6 +307,13 @@ p { text-align: center;
 
 #Apuntate .box-politicas input {
   min-height: 0;
+}
+
+@media (max-width: 768px) {
+  #Apuntate {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 nav a {
