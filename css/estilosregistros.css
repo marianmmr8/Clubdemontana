@@ -1,0 +1,312 @@
+/* estilos.css — KIT DE PARTIDA (no hace falta modificarlo)
+   Las clases que usarás desde JavaScript están marcadas con ★ */
+
+:root {
+  --papel: #f4f1e8;
+  --blanco: #fffdf7;
+  --tinta: #1f2a22;
+  --suave: #55604f;
+  --bosque: #24442f;
+  --musgo: #3f7a4f;
+  --tierra: #9a5b21;
+  --linea: #d3cdbd;
+  --error: #a3261b;
+  --ok: #2f6d3d;
+}
+#BP{
+  font-size: 200%;
+  font-weight: bolder;
+  color: rgb(18, 31, 31);
+  background-color: antiquewhite;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  font-family: "Original Surfer", sans-serif;
+  margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+nav a{
+  
+  margin:auto;
+  font-weight: bolder;
+  color: rgb(18, 31, 31);
+  display: inline-block;
+  transition: all 0.3s ease;
+  padding: 10px;
+  
+}
+.menu{ display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* estas 3 siguientes son para fijar la cabecera */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: aliceblue;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 1rem/1.55 system-ui, "Segoe UI", Roboto, sans-serif;
+  color: var(--tinta);
+  background: var(--papel);
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px 3rem;
+}
+
+h2 {
+  color: var(--bosque);
+  margin: 2rem 0 .8rem;
+}
+
+:focus-visible {
+  outline: 3px solid var(--tierra);
+  outline-offset: 2px;
+}
+
+/* Cabecera: la foto de portada ocupa todo el ancho */
+.cabecera {
+  position: relative;
+  background: #2a3442;
+  color: #fff;
+  min-height: 180px;
+}
+
+.cabecera img {
+  display: block;
+  width: 100%;
+  height: clamp(180px, 34vw, 360px);
+  object-fit: cover;
+}
+
+.cabecera-texto {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1.2rem 16px;
+  background: linear-gradient(to top, rgb(0 0 0 / .7), transparent);
+}
+
+.cabecera-texto>* {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marca {
+  margin: 0 auto;
+  font-size: .85rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.cabecera h1 {
+  margin: .1rem auto 0;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+}
+
+.boton {
+  font: inherit;
+  font-weight: 600;
+  min-height: 44px;
+  padding: 0 1rem;
+  border-radius: 999px;
+  border: 2px solid var(--bosque);
+  background: var(--bosque);
+  color: #fff;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background: var(--musgo);
+  border-color: var(--musgo);
+}
+
+.boton-sec {
+  background: transparent;
+  color: var(--bosque);
+}
+
+.boton-sec:hover {
+  color: #fff;
+}
+.regresa-pagina {
+ background: transparent;
+  color: var(--bosque);
+  align-items: center;
+}
+
+.bloque details {
+  margin-top: .6rem;
+  max-width: 70ch;
+}
+
+.herramientas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem 1rem;
+  align-items: center;
+}
+
+select,
+input {
+  font: inherit;
+  min-height: 44px;
+  padding: .3rem .6rem;
+  border: 1px solid #8e8a7c;
+  border-radius: 6px;
+  background: var(--blanco);
+}
+
+.contador {
+  color: var(--suave);
+}
+
+.aviso {
+  padding: .8rem 1rem;
+  border-left: 4px solid var(--error);
+  background: #fbe9e6;
+}
+
+/* ★ Tarjetas de ruta: <li class="tarjeta"> dentro de <ul id="lista-rutas"> */
+.rejilla {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+}
+
+.tarjeta {
+  background: var(--blanco);
+  border: 1px solid var(--linea);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform .4s ease, box-shadow .4s ease, border-color .4s ease;
+}
+
+.tarjeta h3 {
+  margin: 0 0 .3rem;
+  font-size: 1.1rem;
+}
+
+.tarjeta p {
+  margin: .2rem 0;
+}
+
+.tarjeta .zona {
+  color: var(--suave);
+  font-size: .9rem;
+}
+
+.tarjeta .completa {
+  color: var(--error);
+  font-weight: 600;
+}
+
+/* ★ Etiqueta de dificultad: <span class="nivel nivel-baja">baja</span> */
+.nivel {
+  display: inline-block;
+  padding: 0 .55rem;
+  border-radius: 999px;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.nivel-baja {
+  background: #2f6d3d;
+}
+
+.nivel-media {
+  background: #8a5a00;
+}
+
+.nivel-alta {
+  background: #a3261b;
+}
+
+/* ★ Efecto «ruta del mes»: añade la clase .destacada a una tarjeta */
+.tarjeta.destacada {
+  transform: scale(1.05);
+  border-color: var(--tierra);
+  box-shadow: 0 0 0 4px #f0c27b, 0 10px 24px rgb(0 0 0 / .18);
+}
+
+/* Formulario */
+.formulario {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: end;
+  background: var(--blanco);
+  border: 1px solid var(--linea);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.campo {
+  display: grid;
+  gap: .3rem;
+}
+
+.campo label {
+  font-weight: 600;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+}
+
+/* ★ Mensaje del formulario: añade .mensaje-error o .mensaje-ok a <p id="mensaje"> */
+.mensaje {
+  min-height: 1.5em;
+  font-weight: 600;
+}
+
+.mensaje-error {
+  color: var(--error);
+}
+
+.mensaje-ok {
+  color: var(--ok);
+}
+
+.mis-inscripciones {
+  padding-left: 1.2rem;
+}
+
+.pie {
+  text-align: center;
+  padding: 1.5rem 16px;
+  color: var(--suave);
+  font-size: .85rem;
+  border-top: 1px solid var(--linea);
+}
+
+/* Accesibilidad: sin movimiento para quien lo ha pedido en su sistema */
+@media (prefers-reduced-motion: reduce) {
+  .tarjeta {
+    transition: none;
+  }
+
+  .tarjeta.destacada {
+    transform: none;
+  }
+}

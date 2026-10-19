@@ -101,6 +101,14 @@ font-family: var(--font-secundaria);
   text-align: center;
 
 }
+.registro-rutas{
+  
+  display: flex;
+  background: transparent;
+  color: var(--bosque);
+  align-items: center;
+  padding: 15px;
+}
 
 .parrafo-quienes-somos{
   padding: 30px;
