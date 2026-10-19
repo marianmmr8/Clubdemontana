@@ -87,7 +87,7 @@ h2 {
 .cabecera img {
   display: block;
   width: 100%;
-  height: clamp(180px, 34vw, 360px);
+  height: clamp(220px, 40vw, 420px);
   object-fit: cover;
 }
 

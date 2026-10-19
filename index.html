@@ -228,71 +228,66 @@ Material incluido</p>
             </div>
             
             <div class="container">
-    <h2>Registrate como Socio</h2>
-    <!-- para el envio de datos se pone post lo vemos mas adelante pero siempre es post, con get se ven los datos en la barra como la contraseña  -->
-    <!-- se pone el atributo required para obligar a que se logeen las personas completamente no darle solo a enviar sin campo rellenos  -->
-    <form method="get" action="#">
-      <div class="campo-formulario">
-        <!-- poner en las etiquetas el nombre siempre nombre e id -->
-        <label class="nombre-etiqueta" for="nombre">Nombre:</label>
-
-        <input class="relleno-formulario"
-          type="text"
-          name="nombre"
-          id="nombre"
-          placeholder="Escribe tu nombre" required
-        />
-      
-      <div class="campo-formulario">
-        <!-- poner en las etiquetas el nombre siempre nombre e id -->
-        <label class="nombre-etiqueta" for="Apellido">Apellido:</label>
-        <input
-          type="text"
-          name="nombre"
-          id="nombre"
-          placeholder="Escribe tu apellido" 
-        />
-      </div>
-      <div class="campo-formulario">
-        <!-- igual que con el nombre lo hacemos con el email -->
-        <label class="nombre-etiqueta" for="email">Email:</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder=" Escribe tu email" required
-        />
-      </div>
-      <div class="campo-formulario">
-      <label class="nombre-etiqueta" for="password">Contraseña</label>
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder=" Escribe tu contraseña" required />
-      
-      </div>
-      <div>
-        <div class="campo-formulario">
-          <label class="nombre-etiqueta" for="comentario">Comentario</label>
-        <!-- el texarea es para un contenedor grande para los comentario y se deja en blanco si quiers que se vea algo que al escribir se quite es placeholder -->
-          <textarea name="Comentarios" id="comentario" placeholder="escribe tu comentario"></textarea >
-        
-        <!-- Ponemos las politicas de seguridad y el check -->
- 
-
-</div>
-<div  class="boton-enviar">
-<button type="submit">Enviar</button>
-</div>
-<div class="box-politicas">
-<input type="checkbox" id= "politicas de privacidad" required>
-<label for="politicas de privacidad"><a href="politicas.html">Acepto las politicas de privacidad</a></label>
-</div>
-        </div>
-      </div>
-    </form>
-    </div>
+              <h2>Registrate como Socio</h2>
+              <form class="formulario" method="get" action="#">
+                <div class="campo">
+                  <label for="nombre">Nombre:</label>
+                  <input
+                    type="text"
+                    name="nombre"
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                  />
+                </div>
+                <div class="campo">
+                  <label for="apellido">Apellido:</label>
+                  <input
+                    type="text"
+                    name="apellido"
+                    id="apellido"
+                    placeholder="Escribe tu apellido"
+                  />
+                </div>
+                <div class="campo">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Escribe tu email"
+                    required
+                  />
+                </div>
+                <div class="campo">
+                  <label for="password">Contraseña</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Escribe tu contraseña"
+                    required
+                  />
+                </div>
+                <div class="campo comentario">
+                  <label for="comentario">Comentario</label>
+                  <textarea
+                    name="Comentarios"
+                    id="comentario"
+                    placeholder="Escribe tu comentario"
+                  ></textarea>
+                </div>
+                <div class="boton-enviar">
+                  <button class="boton" type="submit">Enviar</button>
+                </div>
+                <div class="box-politicas">
+                  <input type="checkbox" id="politicas-privacidad" required />
+                  <label for="politicas-privacidad">
+                    <a href="politicas.html">Acepto las politicas de privacidad</a>
+                  </label>
+                </div>
+              </form>
+            </div>
             </section> 
 
     </main>

@@ -222,25 +222,96 @@ p { text-align: center;
          
 #Apuntate{
   background-color: var(--color-tarjeta);
-   }
+}
 
-/* .campo-formulario{
-  padding: 5px;
+#Apuntate .Apuntate > h2 {
+  text-align: center;
+}
+
+#Apuntate .container {
+  flex: 1;
+  min-width: 0;
+  padding: 1rem;
+  align-items: stretch;
+}
+
+#Apuntate .formulario {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  align-items: end;
+  background: var(--color-tarjeta);
+  border: 1px solid rgb(18, 31, 31);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+#Apuntate .campo {
+  display: grid;
+  gap: .3rem;
+  min-width: 0;
+}
+
+#Apuntate .campo label {
+  font-weight: 600;
+}
+
+#Apuntate .campo input,
+#Apuntate .campo textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: .3rem .6rem;
+  border: 1px solid #8e8a7c;
+  border-radius: 6px;
+  background: #fffdf7;
+  font: inherit;
+}
+
+#Apuntate .campo textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#Apuntate .comentario,
+#Apuntate .boton-enviar,
+#Apuntate .box-politicas {
+  grid-column: 1 / -1;
+}
+
+#Apuntate .boton-enviar {
+  padding: 0;
+}
+
+#Apuntate .boton {
+  min-height: 44px;
+  padding: 0 1rem;
+  border: 2px solid #24442f;
+  border-radius: 999px;
+  background: #24442f;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#Apuntate .boton:hover {
+  border-color: #3f7a4f;
+  background: #3f7a4f;
+}
+
+#Apuntate .box-politicas {
   display: flex;
-} */ 
+  align-items: center;
+  gap: .5rem;
+}
 
- nav a {
+#Apuntate .box-politicas input {
+  min-height: 0;
+}
+
+nav a {
   padding: 20px;
- }
- .relleno-formulario{
-  padding: 5px;
- }
- .nombre-etiqueta{
-  padding: 5px;
-  display: flex;
-  align-content: center;
-
- }
+}
 
 .container{
   display: flex;
